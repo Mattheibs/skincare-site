@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tiro Bangla', serif;
+    color: white;
+    position: relative;
+}
+
+nav {
+    background-color:
+        rgba(240, 171, 171, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    font-size: 1.25vw;
+    line-height: 1.66vw;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+}
+
+.logo {
+    margin-left: 2.7vw;
+}
+
+.navbar ul {
+    display: flex;
+    margin-right: 9.387vw;
+}
+
+.navbar ul li {
+    font-size: 1.25vw;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 2.8vw;
+}
+
+.navbar ul li a {
+    font-size: 1.25vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+    transform: scale(1.1);
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase .left-showcase {
+    margin: 14.94vw 0 0 9.21vw;
+}
+
+.showcase h1 {
+    width: 48vw;
+    font-size: 5vw;
+    color:
+        rgba(86, 86, 86, 1);
+    line-height: 6.61vw;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    margin-bottom: 1.13vw;
+}
+
+.showcase p {
+    width: 36.92vw;
+    color:
+        rgba(86, 86, 86, 1);
+    margin-bottom: 2.23vw;
+}
+
+.showcase a {
+    padding: 0.677vw 2.281vw;
+    font-size: 16px;
+    color:
+        rgba(86, 86, 86, 1);
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    background-color:
+        rgba(240, 171, 171, 1);
+    border-radius: 2.7vw;
+    color: white;
+    text-decoration: none;
+}
+
+.showcase img {
+    width: 39.84vw;
+    height: 100%;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vw;
+    gap: 0.1vw;
+    margin-top: 0.1vw;
+}
+
+.products-left-side {
+    width: 100%;
+}
+
+.products-left-side img {
+    height: 100%;
+}
+
+.quadrant {
+    display: grid;
+    grid: auto / auto auto;
+    gap: 0.1vw;
+    width: 100%;
+    height: 100%;
+    margin-right: 0.1vw;
+}
+
+.quadrant p {
+    color: white;
+    background-color: rgba(115, 185, 236, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.76vw;
+    margin-bottom: 500px;
+}
+
+.employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.66vw 1.82vw 1.979vw 1.82vw;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(121, 158, 215, 0.1);
+}
+
+.employee h3, .employee p, .employee h4 {
+    color: black;
+}
+
+.employee h3 {
+    font-size: 1.66vw;
+    margin-top: 1.92vw;
+}
+
+.employee>p {
+    font-size: 16px;
+    margin-bottom: 4.2vw;
+}
+
+.employee div {
+    display: flex;
+    align-items: center;
+    gap: 1.66vw;
+}
+
+.employee div button {
+    width: 3.229vw;
+    height: 3.229vw;
+    border-radius: 50%;
+    background: #F0ABAB;
+    border: none;
+    font-size: 1.3vw;
+}
+
+.employee div p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.employee img {
+    width: 23.95vw;
+    height: 24.84vw;
+}
+
+.employees .middle-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.09vw;
+}
+
+.employees .middle-info form input {
+    width: 23.33vw;
+    border: 1px solid #D1D1D1;
+    color: #D1D1D1;
+    padding-left: 1.35vw;
+    height: 42px;
+}
+
+.employees .middle-info {
+    margin-top: -2vw;
+    padding: 3.07vw 1.82vw 2.91vw 1.82vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(121, 158, 215, 0.1);
+}
+
+.employees .middle-info h4 {
+    font-size: 1.04vw;
+    width: 19.2vw;
+    text-align: center;
+    letter-spacing: 20%;
+    margin-bottom: 2vw;
+}
+
+.middle-info h3, .middle-info p, .middle-info h4 {
+    color: black;
+}
+
+.middle-info p {
+    margin-bottom: 3.85vw;
+    font-size: 16px;
+}
+
+.employees .middle-info button {
+    width: 7.08vw;
+    height: 2.44vw;
+    border-radius: 2.7vw;
+    background-color: #F0ABAB;
+    border: none;
+    margin-top: 6vw;
+    align-self: center;
+}
+
+.employees-header {
+    font-size: 3.02vw;
+    color: black;
+    text-align: center;
+    margin-top: 8.59vw;
+}
+
+.border {
+    border-top: 1px solid black;
+    width: 16.45vw;
+    align-self: center;
+    margin-top: 2.23vw;
+}
+
+.underline {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.8vw;
+}

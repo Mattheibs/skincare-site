@@ -15,11 +15,26 @@ nav {
     align-items: center;
 }
 
+
 p {
-    font-size: 1.25vw;
+    font-size: 16px;
     line-height: 1.66vw;
     letter-spacing: 0.2em;
     font-weight: 400;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: calc(16px + 1.66vw);
+    line-height: 3.2vw;
+    letter-spacing: 0.2em;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: calc(16px + 0.41vw);
+    line-height: 3.2vw;
+    letter-spacing: 0.2em;
 }
 
 .logo {
@@ -32,14 +47,14 @@ p {
 }
 
 .navbar ul li {
-    font-size: 1.25vw;
+    font-size: calc(16px + 0.41vw);
     text-decoration: none;
     list-style-type: none;
     margin: 0 2.8vw;
 }
 
 .navbar ul li a {
-    font-size: 1.25vw;
+    font-size: calc(16px + 0.41vw);
     text-decoration: none;
     cursor: pointer;
 }
@@ -59,7 +74,7 @@ p {
 
 .showcase h1 {
     width: 48vw;
-    font-size: 5vw;
+    font-size: calc(16px + 4.16vw);
     color:
         rgba(86, 86, 86, 1);
     line-height: 6.61vw;
@@ -136,111 +151,53 @@ p {
     margin-bottom: 500px;
 }
 
-.employee {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.66vw 1.82vw 1.979vw 1.82vw;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 30px rgba(121, 158, 215, 0.1);
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
 }
 
-.employee h3, .employee p, .employee h4 {
-    color: black;
-}
-
-.employee h3 {
-    font-size: 1.66vw;
-    margin-top: 1.92vw;
-}
-
-.employee>p {
-    font-size: 16px;
-    margin-bottom: 4.2vw;
-}
-
-.employee div {
-    display: flex;
-    align-items: center;
-    gap: 1.66vw;
-}
-
-.employee div button {
-    width: 3.229vw;
-    height: 3.229vw;
-    border-radius: 50%;
-    background: #F0ABAB;
-    border: none;
-    font-size: 1.3vw;
-}
-
-.employee div p {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.employee img {
-    width: 23.95vw;
-    height: 24.84vw;
-}
-
-.employees .middle-info form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.09vw;
-}
-
-.employees .middle-info form input {
-    width: 23.33vw;
-    border: 1px solid #D1D1D1;
-    color: #D1D1D1;
-    padding-left: 1.35vw;
-    height: 42px;
-}
-
-.employees .middle-info {
-    margin-top: -2vw;
-    padding: 3.07vw 1.82vw 2.91vw 1.82vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 30px rgba(121, 158, 215, 0.1);
-}
-
-.employees .middle-info h4 {
-    font-size: 1.04vw;
-    width: 19.2vw;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    letter-spacing: 20%;
-    margin-bottom: 2vw;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
-.middle-info h3, .middle-info p, .middle-info h4 {
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
     color: black;
 }
 
-.middle-info p {
-    margin-bottom: 3.85vw;
-    font-size: 16px;
+/* Style the back side */
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
 }
 
-.employees .middle-info button {
-    width: 7.08vw;
-    height: 2.44vw;
-    border-radius: 2.7vw;
-    background-color: #F0ABAB;
-    border: none;
-    margin-top: 6vw;
-    align-self: center;
-}
-
-.employees-header {
-    font-size: 3.02vw;
-    color: black;
-    text-align: center;
-    margin-top: 8.59vw;
-}
 
 .border {
     border-top: 1px solid black;
@@ -253,4 +210,55 @@ p {
     display: flex;
     flex-direction: column;
     margin-bottom: 3.8vw;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+}
+
+.slogan-content {
+    text-align: center;
+}
+
+.slogan-writting h2 {
+    color: black;
+    width: 57.29vw;
+    font-size: 1.66vw;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+}
+
+.sloagn-btn {
+    padding: 1.09vw 3.125vw;
+    background-color: rgba(240, 171, 171, 1);
+    color: white;
+    border-radius: 52px;
+    border: none;
+    font-size: 1.25vw;
+    letter-spacing: 0.2em;
+    margin-top: 3.95vw;
+}
+
+.what-clients-saying {
+    background-color: rgba(115, 185, 236, 1);
+    margin-top: 5.83vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.what-clients-saying-header {
+    padding-top: 4.68vw;
+}
+
+.what-clients-saying-header h3 {
+    margin-bottom: 1vw;
+}
+
+.underline-what-clients-are-saying {
+    border-top: 1px solid white;
+    width: 22.56vw;
+    margin: auto;
 }
